@@ -11,7 +11,7 @@ Gauss 1st example
 [0.10640311936426983, 0.12954233612776672, -0.041442969807068297, 0.30552155185092117, 0.086705317420873104]
 [ 0.11688665  0.14450197 -0.10031595  0.25987603  0.08670532]
 ```
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/gauss1.png)  
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/gauss1.png)  
 Gauss 2nd example  
 ```
 50
@@ -31,19 +31,19 @@ Gauss 2nd example
   -6.13574054e-01   6.30051663e-03]
 ```  
 
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/gauss2.png)  
-# 2. Progon.py  
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/gauss2.png)  
+# 2. Progonka.py  
 The sweep method is a special case of the Gauss method and is used to solve systems of linear equations of the form Ax = B,where A is a three-diagonal matrix. A three-diagonal matrix is ​​a matrix of the form where zeros are in all other places except the main diagonal and two adjacent to it.
 The sweep method consists of two stages: direct sweep and reverse sweep. At the first stage, running coefficients are determined, and at the second, unknown x are found.  
-Progon 1st example  
+Progonka 1st example  
 ```
 5
 [0.29346500324956881, 0.23312392498882306, -0.060120135580518451, 0.086870544948763409, -0.016842731964425102]
 [ 0.28602979  0.23925317 -0.02400086  0.05375295 -0.00076072]
 
 ```
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/progon1.png)    
-Progon 2nd example  
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/progon1.png)    
+Progonka 2nd example  
 ```
 50
 [0.21199902128662651, -0.062012904646452968, 0.19463848411845339, 0.12620121410046439, 0.022423051217254047, 0.60837433457373358, -0.40204206123485964, 0.61253475659992573, -0.043303349576955259, -0.026761210447170183, 0.20187947725042235, 0.35950353039848687, 0.54764721553787865, -0.33362646317167188, 0.92798074638370087, -0.15058557459070887, 0.19980163463805795, 0.48259624301173781, -1.1691272655816185, 2.0562504804197159, -0.8030334809120776, 0.6260877919552108, -0.12751543378694796, 0.52442424671085397, -0.14327436635202107, 0.76166832042586419, -0.30708689171193387, 0.4588744802366137, -0.1496020258204929, 0.64580124789712001, -0.44133109275430649, 1.1328368910451896, 0.025813750461639511, 0.06499293253030658, 0.59092831456291961, 0.28184911221268349, 0.046056181346331937, 0.29425052953600633, 0.68776523945455093, 0.036816202919562349, 0.24110792633339428, -0.23665503032544546, 0.70476335170907733, -0.320352024106205, 0.72720339877548257, -0.42962566950378284, 0.38703903405951001, 0.32118504599523667, 0.13878927538421976, 0.037917640432784276]
@@ -57,7 +57,7 @@ Progon 2nd example
   0.69601952 -0.22650424  0.55702025 -0.12638944 -0.1723939   0.58837524
  -0.92652315  0.376901  ]
 ```
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/progon2.png)  
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/progon2.png)  
 # 3.Seidel.py  
 Метод Зейделя (иногда называемый методом Гаусса-Зейделя) является модификацией метода простой итерации, заключающейся в том, что при вычислении очередного приближения x(k+1) (см. формулы (1.13),(1.14)) его уже полученные компоненты x1(k+1), ...,xi - 1(k+1) сразу же используются для вычисления xi(k+1).
 В координатной форме записи метод Зейделя имеет вид:
@@ -77,7 +77,7 @@ Seidel 1st example
 [-0.05174796  0.14811635  0.20290369  0.06149709 -0.04543242]
 
 ```
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/seidel1.png)  
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/seidel1.png)  
 Seidel 2nd example  
 ```
 50
@@ -94,9 +94,9 @@ Seidel 2nd example
 
 ```
 
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/seidel2.png)  
-# 4. Yakobi.py  
-The Jacobi method is one of the simplest methods to bring the matrix system to a form convenient for iteration: from the 1st equation of the matrix we express the unknown x1, from the 2nd we express the unknown x2
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/seidel2.png)  
+# 4. Jakoby.py  
+The Jacoby method is one of the simplest methods to bring the matrix system to a form convenient for iteration: from the 1st equation of the matrix we express the unknown x1, from the 2nd we express the unknown x2
 etc.The result is matrix B,in which on the main diagonal there are zero elements, and all the rest are calculated by the formula:
 bij = −aij / aii, i, j = 1, 2 ..., n
 Elements (components) of vector d
@@ -111,15 +111,15 @@ Ending criterion in the Jacobi method:
 , where ε1 = 1− || B |||| B || ε
 If B <1/2,then we can apply a simpler criterion for ending iterations:
 || x (n + 1) −x (n) || <ε  
-Yakobi 1st example  
+Jakoby 1st example  
 ```
 5
 [0.0024060697429644493, 0.052217362344140997, 0.077204869988588304, 0.021654434411729276, 0.13025822281718594]
 [-0.01737019  0.01060054  0.07118036  0.00398417  0.12004975]
 ```
 
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/yakobi1.png)  
-Yakobi 2nd example  
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/yakobi1.png)  
+Jakoby 2nd example  
 ```
 50
 [0.013484694547678677, 0.015598083228154185, 0.014005338952023473, 0.02208695126973614, 0.0091592457239377395, 0.027963898279794754, 0.028144315471463184, 0.010416790072962791, -0.0044591391531552897, 0.0021937338372900084, 0.015922416486945375, -0.00093980492174455441, 0.0082681780854096075, 0.025236183467782211, 0.018064846607595948, 1.5297491585896853e-05, 0.021969077556432601, 0.012051169706450354, 0.022979173377797014, 0.020793540149865605, 0.016676458609771835, 0.0064382041864236477, 0.023400578222358106, 0.010558487975484979, 0.0063062895355343309, -0.0010676348750324513, 0.021398417598994249, 0.013952156668533494, -0.0024716398309169662, 0.0004893691103775126, 0.0088810344289261822, 0.0031560405386608075, 0.011759648973943814, 0.018946897873994343, 0.0093833222668972347, 0.015409256972226134, -0.0017198344087953114, 0.00046148575345748795, 0.023344407571892371, 0.01230422205127394, 0.0153721948648803, 0.0094771370824526906, 0.012678235338734894, 0.0069046911316427376, 0.018040621805430004, 0.0061189952359881139, 0.0009662809273301348, 0.0040384702031255083, 0.0037287938461700969, 0.0090291819343925241]
@@ -136,7 +136,7 @@ Yakobi 2nd example
 
 ```
 
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/yakobi2.png)    
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/yakobi2.png)    
 # 5. interpol_splain.py  
 A spline is a function whose domain is divided into a finite number of segments, on each of which it coincides with some algebraic polynomial. The maximum degree of polynomials used is called the spline degree.  
 1st Example
@@ -149,7 +149,7 @@ z: [ 0.99532583  0.38068825  0.9061145   0.86756244]
 
 ```
 
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/splain1.png)  
+![Image alt](https://github.comMcken09/Numerical-methods/raw/master/pictures/splain1.png)  
 2nd example  
 ```
 50
@@ -199,7 +199,7 @@ z: [ 11.3803256   43.76376315  48.54749638  22.91862124  46.01720557
 
 ```
 
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/splain2.png)      
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/splain2.png)      
 # 6. Interpol_lagr.py  
 The Lagrange interpolation polynomial is a polynomial of minimal degree that takes these values ​​at the specified set of points. For n + 1 pairs of numbers (x0, y0), (x1, y1), ..., (xn, yn), where all xj are different, there exists a unique polynomial L (x) of degree at most n for which L (xj) = YJ.  
 Lagrange1 example  
@@ -209,7 +209,7 @@ x: [ 0.50579171  0.97994765  3.42736679  3.4536123   3.19083841] y: [ 3.22711216
 26.1323194201
 
 ```
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/lagr1.png)  
+![Image alt](https://github.comMcken09/Numerical-methods/raw/master/pictures/lagr1.png)  
 Lagrange2 example  
 ```
 50
@@ -244,27 +244,27 @@ x: [ 40.38797403  46.37303413   8.08387368  10.29454408  29.20114856
 54.0055466508
 
 ```
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/lagr2.png)  
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/lagr2.png)  
 
 # 7. Interpol_line.py  
 Linear interpolation — interpolation by the algebraic binomial P₁ (x) = ax + b of the function f given at two points x₀ and x₁ of the segment [a, b]. If values ​​are specified at several points, the function is replaced by a piecewise linear function.  
 Line 1 example  
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/line1.png)  
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/line1.png)  
 Line 2 example  
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/line2.png)  
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/line2.png)  
 # 8. Ur_tepla.py  
 Other functions u 0 (x) and performance Methods μ. Give your feedback in the future Time T.  
 ∂u(x,t)/∂t - μ*(∂^2)(x,t)/∂x^2 = 0,x∈R,t>0   
 u(x,0) = u0(x),x∈R. For example, u0(x) = 1/(2*x^2 + 1).      
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/ur_tepla.png)     
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/ur_tepla.png)     
 # 9. Ur_perenosa.py  
 Extended function u 0 (x) and speed range C.  
 Add a u (x, T) profile to the erased option Time T.  
 ∂u(x,t)/∂t + C*∂u(x,t)/∂x = 0, x ∈ R, t> 0    
 u(x,0) = u0(x), x > 0  
 u(0,t) = v0(t), t > 0      
-![Image alt](https://github.com/kv00msu/chm/raw/master/pictures/ur_perenosa.png)   
-# 10. Holeck.py  
+![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/ur_perenosa.png)   
+# 10. Cholesky.py  
 representation of a symmetric positive definite matrix A in the form A = L*(transpose(L)).
 ```
 5
