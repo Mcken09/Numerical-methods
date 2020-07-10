@@ -136,7 +136,7 @@ Jakoby 2nd example
 
 ```
 
-![Image alt](https://github.com/Mcken09/Numerical-methods/raw/master/pictures/yakobi2.png)    
+![Image alt](https://github.com/Mcken09/Numerical-methods1/raw/master/pictures/yakobi2.png)    
 # 5. interpol_splain.py  
 A spline is a function whose domain is divided into a finite number of segments, on each of which it coincides with some algebraic polynomial. The maximum degree of polynomials used is called the spline degree.  
 1st Example
@@ -149,7 +149,7 @@ z: [ 0.99532583  0.38068825  0.9061145   0.86756244]
 
 ```
 
-![Image alt](https://github.comMcken09/Numerical-methods/raw/master/pictures/splain1.png)  
+![Image alt](https://github.comMcken09/Numerical-methods1/raw/master/pictures/splain1.png)  
 2nd example  
 ```
 50
